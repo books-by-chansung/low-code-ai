@@ -1,4 +1,4 @@
-# Uncomment the following line if you're running the code in a Jupyter Notebook
+# 주피터 노트북에서 코드를 실행 중이라면 아래 줄의 주석을 해제하세요.
 # %%writefile trainer/trainer.py
 
 import joblib
