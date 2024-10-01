@@ -25,7 +25,7 @@
        *  모델 유지 관리
    *  요약
 
-2. 데이터는 첫 번째 단계입니다
+2. 데이터는 첫 번째 단계입니다 ([노트북](https://github.com/books-by-chansung/low-code-ai/blob/main/Chapter2/Chapter_2.ipynb))
    *  이 책에 사용된 사용 사례 및 데이터셋 개요
        *  소매: 제품 가격
        *  헬스케어: 심장병 캠페인
@@ -54,7 +54,7 @@
        *  오픈 소스 ML 라이브러리
    *  요약
 
-4. AutoML로 광고 미디어 채널의 매출 예측하기
+4. AutoML로 광고 미디어 채널의 매출 예측하기 ([노트북](https://github.com/books-by-chansung/low-code-ai/blob/main/Chapter4/Chapter4_Advertising_Model.ipynb))
    *  비즈니스 사용 사례: 미디어 채널의 매출 예측하기
        *  프로젝트 워크플로
        *  프로젝트 데이터셋
@@ -71,7 +71,7 @@
        *  모델의 예측 구하기
    *  요약
 
-5. AutoML로 사기 거래 탐지하기
+5. AutoML로 사기 거래 탐지하기 ([노트북](https://github.com/books-by-chansung/low-code-ai/blob/main/chapter5/Fraud_Detection.ipynb))
    *  비즈니스 사용 사례: 금융 거래 사기 탐지
        *  프로젝트 워크플로
        *  프로젝트 데이터셋
@@ -89,7 +89,7 @@
        *  모델의 예측 구하기
    *  요약
 
-6. 빅쿼리 ML로 선형 회귀 모델 학습시키기
+6. 빅쿼리 ML로 선형 회귀 모델 학습시키기 ([SQL 쿼리](https://github.com/books-by-chansung/low-code-ai/blob/main/chapter6/bq_examples.sql))
    *  비즈니스 사용 사례: 발전소 생산량
    *  빅쿼리 SQL로 데이터셋 정리하기
        *  빅쿼리에 데이터셋 업로드하기
@@ -110,7 +110,7 @@
    *  심층 분석: 클라우드 쉘로 클라우드 스토리지 파일 보기
    *  요약
 
-7. 파이썬으로 사용자 정의 ML 모델 학습시키기
+7. 파이썬으로 사용자 정의 ML 모델 학습시키기 ([노트북](https://github.com/books-by-chansung/low-code-ai/blob/main/chapter7/Customer_Churn_Model.ipynb))
    *  비즈니스 사용 사례: 고객 이탈 예측
    *  노코드, 로우코드, 사용자 정의 코드 중 알맞은 ML 솔루션 선택하기
    *  판다스, 맷플롯립, Seaborn으로 데이터셋 탐색하기
@@ -129,7 +129,7 @@
    *  Vertex AI에서 맞춤형 ML 모델 구축
    *  요약
 
-8. 사용자 정의 모델의 성능 개선하기
+8. 사용자 정의 모델의 성능 개선하기 ([케라스 노트북](https://github.com/books-by-chansung/low-code-ai/blob/main/chapter8/keras_model.ipynb), [사이킷런 노트북](https://github.com/books-by-chansung/low-code-ai/blob/main/chapter8/sklearn_model.ipynb))
    *  비즈니스 사용 사례: 중고차 경매 가격
    *  사이킷런 모델 개선하기
        *  노트북에서 기존 모델 불러오기
@@ -142,7 +142,7 @@
        *  모델을 위한 데이터셋과 전처리 계층 만들기
        *  신경망 모델 구축
        *  케라스에서 하이퍼파라미터 튜닝하기
-   *  빅쿼리 ML에서의 하이퍼파라미터 튜닝하기
+   *  빅쿼리 ML에서의 하이퍼파라미터 튜닝하기 ([SQL](https://github.com/books-by-chansung/low-code-ai/blob/main/chapter8/bqml_tuning.sql))
        *  자동차 경매 데이터 불러오고 변환하기
        *  선형 회귀 모델 학습시키기 및 TRANSFORM 절 사용하기
        *  빅쿼리 ML에서 하이퍼파라미터 튜닝 작업 구성하기
