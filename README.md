@@ -1,171 +1,162 @@
-*This is not an official Google product*
-
-# low-code-ai
-This repository has been compiled as an easy-to-access resource for the code presented in the main text of the book. Note that for this reason, many comments and code explanations are found in the text of the book rather than the code here. 
-
-If you find any errors or other issues with the code shared here, please create an Issue for this repository. For any errors or issues in the book, please submit errata at the [O'Reilly website](http://oreilly.com/catalog/0636920860877/errata?_gl=1*1beeaae*_ga*MTcwOTUxOTQ3OS4xNjc2NzUwNTU0*_ga_092EL089CH*MTY5NDk3MTk1MS41LjAuMTY5NDk3MTk1Ny41NC4wLjA.). Thank you!
-
-### Title: Low-Code AI
+### 로우 코드 AI
+이 저장소는 책 본문에서 제시된 코드를 쉽게 접근할 수 있는 자료로 구성되어 있습니다. 이러한 이유로, 많은 주석과 코드 설명이 여기 코드에 포함되어 있지 않고, 책의 본문에 나와 있다는 점을 참고하세요.
 
 <img src="Low-Code_AI.jpg" alt="Low-Code AI" width="400"/>
 
-## Table of Contents
-0. Preface
-   *  Who Should Read This Book?
-   *  What Is and Isn’t in This Book
-   *  Conventions Used in This Book
-   *  Using Code Examples
-   *  O’Reilly Online Learning
-   *  How to Contact Us
-   *  Acknowledgments
+## 목차
+0. 서문
+   *  이 책은 누가 일거야 할까요?
+   *  이 책에 포함된 내용과 포함되지 않은 내용
+   *  코드 예제 사용
+   *  감사
 
-1. How Data Drives Decision Making in Machine Learning
-   *  What Is the Goal or Use Case?
-   *  An Enterprise ML Workflow
-       *  Defining the Business Objective or Problem Statement
-       *  Data Collection
-       *  Data Preprocessing
-       *  Data Analysis
-       *  Data Transformation and Feature Selection
-       *  Researching the Model Selection or Using AutoML (a No-Code Solution)
-       *  Model Training, Evaluation, and Tuning
-       *  Model Testing
-       *  Model Deployment (Serving)
-       *  Maintaining Models
-   *  Summary
+1. 머신러닝에서 데이터로 의사 결정을 내리는 방법
+   *  목표 또는 사용 사례는 무엇인가요?
+   *  엔터프라이즈 ML 워크플로
+       *  비즈니스 목표 또는 문제 정의하기
+       *  데이터 수집
+       *  데이터 전처리
+       *  데이터 분석
+       *  데이터 변환 및 특징 선별
+       *  AutoML(노코드 해결책)로 모델 선택에 대해 연구하기
+       *  모델 학습, 평가, 튜닝
+       *  모델 테스트
+       *  모델 배포(서빙)
+       *  모델 유지 관리
+   *  요약
 
-2. Data Is the First Step
-   *  Overview of Use Cases and Datasets Used in the Book
-       *  Retail: Product Pricing
-       *  Healthcare: Heart Disease Campaign
-       *  Energy: Utility Campaign
-       *  Insurance: Advertising Media Channel Sales Prediction
-       *  Financial: Fraud Detection
-       *  Energy: Power Production Prediction
-       *  Telecommunications: Customer Churn Prediction
-       *  Automotive: Improve Custom Model Performance
-   *  Data and File Types
-       *  Quantitative and Qualitative Data
-       *  Structured, Unstructured, and Semistructured Data
-       *  Data File Types
-       *  How Data Is Processed
-   *  An Overview of GitHub and Google’s Colab
-       *  Use GitHub to Create a Data Repository for Your Projects
-       *  Using Google’s Colaboratory for Low-Code AI Projects
-   *  Summary
+2. 데이터는 첫 번째 단계입니다
+   *  이 책에 사용된 사용 사례 및 데이터셋 개요
+       *  소매: 제품 가격
+       *  헬스케어: 심장병 캠페인
+       *  에너지: 공익 캠페인
+       *  보험: 광고 미디어 채널의 매출 예측
+       *  재무: 사기 거래 탐지
+       *  에너지: 전력 생산 예측
+       *  통신: 고객 이탈 예측
+       *  자동차: 사용자 정의 모델 성능 향상
+   *  데이터 및 파일 유형
+       *  정량적 및 정성적 데이터
+       *  정형, 비정형, 반정형 데이터
+       *  데이터 파일 형식
+       *  데이터 처리 방법
+   *  깃헙과 구글의 콜랩 개요
+       *  깃헙으로 프로젝트용 데이터 저장소 만들기
+       *  로코드 AI 프로젝트에 구글의 콜랩 사용하기
+   *  요약
 
-3. Machine Learning Libraries and Frameworks
-   *  No-Code AutoML
-   *  How AutoML Works
-   *  Machine Learning as a Service
-   *  Low-Code ML Frameworks
-       *  SQL ML Frameworks
-       *  Open Source ML Libraries
-   *  Summary
+3. 머신러닝 라이브러리 및 프레임워크
+   *  노코드 AutoML
+   *  AutoML의 작동 방식
+   *  서비스형 머신러닝
+   *  로코드 ML 프레임워크
+       *  SQL ML 프레임워크
+       *  오픈 소스 ML 라이브러리
+   *  요약
 
-4. Use AutoML to Predict Advertising Media Channel Sales
-   *  The Business Use Case: Media Channel Sales Prediction
-       *  Project Workflow
-       *  Project Dataset
-   *  Exploring the Dataset Using Pandas, Matplotlib, and Seaborn
-       *  Load Data into a Pandas DataFrame in a Google Colab Notebook
-       *  Explore the Advertising Dataset
-       *  Use AutoML to Train a Linear Regression Model
-       *  No-Code Using Vertex AI
-       *  Create a Managed Dataset in Vertex AI
-       *  Select the Model Objective
-       *  Build the Training Model
-       *  Evaluate Model Performance
-       *  Model Feature Importance (Attribution)
-       *  Get Predictions from Your Model
-   *  Summary
+4. AutoML로 광고 미디어 채널의 매출 예측하기
+   *  비즈니스 사용 사례: 미디어 채널의 매출 예측하기
+       *  프로젝트 워크플로
+       *  프로젝트 데이터셋
+   *  판다스, 맷플롯립, Seaborn으로 데이터셋 탐색하기
+       *  구글 콜랩 환경에서 데이터를 판다스 데이터 프레임으로 불러오기
+       *  광고 데이터셋 살펴보기
+   *  AutoML로 선형 회귀 모델 학습시키기
+       *  Vertex AI를 사용한 노코드
+       *  Vertex AI에서 관리형 데이터셋 만들기
+       *  모델의 목적 선택
+       *  모델 학습 작업 구축
+       *  모델의 성능 평가
+       *  모델의 특징 중요도
+       *  모델의 예측 구하기
+   *  요약
 
-5. Using AutoML to Detect Fraudulent Transactions
-   *  The Business Use Case: Fraud Detection for Financial Transactions
-       *  Project Workflow
-       *  Project Dataset
-   *  Exploring the Dataset Using Pandas, Matplotlib, and Seaborn
-     *  Loading Data into a Pandas DataFrame in a Google Colab Notebook
-       *  Exploring the Dataset
-       *  Exporting the Dataset
-   *  Classification Models and Metrics
-   *  Using AutoML to Train a Classification Model
-       *  Creating a Managed Dataset and Selecting the Model Objective
-       *  Exploring Dataset Statistics
-       *  Training the Model
-       *  Evaluating Model Performance
-       *  Model Feature Importances
-       *  Getting Predictions from Your Model
-   *  Summary
+5. AutoML로 사기 거래 탐지하기
+   *  비즈니스 사용 사례: 금융 거래 사기 탐지
+       *  프로젝트 워크플로
+       *  프로젝트 데이터셋
+   *  판다스, 맷플롯립, Seaborn으로 데이터셋 탐색하기
+       *  구글 콜랩 환경에서 데이터를 판다스 데이터 프레임으로 불러오기
+       *  데이터셋 살펴보기
+       *  데이터셋 내보내기
+   *  분류 모델 및 평가 지표
+   *  AutoML로 분류 모델 학습시키기
+       *  관리형 데이터셋 만들기 및 모델의 목적 선택하기
+       *  데이터셋 통계 살펴보기
+       *  모델 학습
+       *  모델의 성능 평가
+       *  모델의 특징 중요도
+       *  모델의 예측 구하기
+   *  요약
 
-6. Using BigQuery ML to Train a Linear Regression Model
-   *  The Business Use Case: Power Plant Production
-   *  Cleaning the Dataset Using SQL in BigQuery
-       *  Loading a Dataset into BigQuery
-       *  Exploring Data in BigQuery Using SQL
-   *  Linear Regression Models
-       *  Feature Selection and Correlation
-       *  Google Colaboratory
-       *  Plotting Feature Relationships to the Label
-       *  The CREATE MODEL Statement in BigQuery ML
-   *  Introducing Explainable AI
-       *  Explainable AI in BigQuery ML
-       *  Exercises
-   *  Neural Networks in BigQuery ML
-       *  Brief Overview of Neural Networks
-       *  Activation Functions and Nonlinearity
-       *  Training a Deep Neural Network in BigQuery ML
-       *  Exercises
-   *  Deep Dive: Using Cloud Shell to View Your Cloud Storage File
-   *  Summary
+6. 빅쿼리 ML로 선형 회귀 모델 학습시키기
+   *  비즈니스 사용 사례: 발전소 생산량
+   *  빅쿼리 SQL로 데이터셋 정리하기
+       *  빅쿼리에 데이터셋 업로드하기
+       *  SQL로 빅쿼리 데이터 탐색
+   *  선형 회귀 모델
+       *  특징 선택 및 상관관계
+       *  구글 콜랩
+       *  레이블에 대한 특징 관계 그리기
+       *  빅쿼리 ML의 CREATE MODEL 문
+   *  설명 가능한 AI
+       *  빅쿼리 ML의 설명 가능한 AI
+       *  연습 문제
+   *  빅쿼리 ML에서의 신경망
+       *  신경망에 대한 간략한 개요
+       *  환성화 함수 및 비선형성
+       *  빅쿼리 ML에서 심층 신경망 학습시키기
+       *  연습 문제
+   *  심층 분석: 클라우드 쉘로 클라우드 스토리지 파일 보기
+   *  요약
 
-7. Training Custom ML Models in Python
-   *  The Business Use Case: Customer Churn Prediction
-   *  Choosing Among No-Code, Low-Code, or Custom Code ML Solutions
-   *  Exploring the Dataset Using Pandas, Matplotlib, and Seaborn
-       *  Loading Data into a Pandas DataFrame in a Google Colab Notebook
-       *  Understanding and Cleaning the Customer Churn Dataset
-       *  Transforming Features Using Pandas and Scikit-Learn
-   *  Building a Logistic Regression Model Using Scikit-Learn
-       *  Logistic Regression
-       *  Training and Evaluating a Model in Scikit-Learn
-       *  Classification Evaluation Metrics
-       *  Serving Predictions with a Trained Model in Scikit-Learn
-       *  Pipelines in Scikit-Learn: An Introduction
-   *  Building a Neural Network Using Keras
-       *  Introduction to Keras
-       *  Training a Neural Network Classifier Using Keras
-       *  Building Custom ML Models on Vertex AI
-   *  Summary
+7. 파이썬으로 사용자 정의 ML 모델 학습시키기
+   *  비즈니스 사용 사례: 고객 이탈 예측
+   *  노코드, 로우코드, 사용자 정의 코드 중 알맞은 ML 솔루션 선택하기
+   *  판다스, 맷플롯립, Seaborn으로 데이터셋 탐색하기
+       *  구글 콜랩 노트북에서 판다스의 데이터프레임으로 데이터 불러오기
+       *  고객 이탈 데이터셋의 이해 및 정리
+       *  판다스와 사이킷런으로 특징 변환하기
+   *  사이킷런으로 로지스틱 회귀 모델 구축하기
+       *  로지스틱 회귀
+       *  사이킷런으로 모델 학습 및 평가하기
+       *  분류 평가 지표
+       *  사이킷런에서 학습된 모델로 예측 서비스 제공
+       *  사이킷런의 파이프라인
+   *  케라스를 사용한 신경망 구축
+       *  케라스에 대한 소개
+       *  케라스로 분류용 신경망 학습 시키기
+   *  Vertex AI에서 맞춤형 ML 모델 구축
+   *  요약
 
-8. Improving Custom Model Performance
-   *  The Business Use Case: Used Car Auction Prices
-   *  Model Improvement in Scikit-Learn
-       *  Loading the Notebook with the Preexisting Model
-       *  Loading the Datasets and the Training-Validation-Test Data Split
-       *  Exploring the Scikit-Learn Linear Regression Model
-       *  Feature Engineering and Improving the Preprocessing Pipeline
-       *  Hyperparameter Tuning
-   *  Model Improvement in Keras
-       *  Introduction to Preprocessing Layers in Keras
-       *  Creating the Dataset and Preprocessing Layers for Your Model
-       *  Building a Neural Network Model
-       *  Hyperparameter Tuning in Keras
-   *  Hyperparameter Tuning in BigQuery ML
-       *  Loading and Transforming Car Auction Data
-       *  Training a Linear Regression Model and Using the TRANSFORM Clause
-       *  Configure a Hyperparameter Tuning Job in BigQuery ML
-   *  Options for Hyperparameter Tuning Large Models
-       *  Vertex AI Training and Tuning
-       *  Automatic Model Tuning with Amazon SageMaker
-       *  Azure Machine Learning
-   *  Summary
+8. 사용자 정의 모델의 성능 개선하기
+   *  비즈니스 사용 사례: 중고차 경매 가격
+   *  사이킷런 모델 개선하기
+       *  노트북에서 기존 모델 불러오기
+       *  데이터셋 불러오기 및 학습-검증-테스트 데이터셋 분할하기
+       *  사이킷런의 선형 회귀 모델 살펴보기
+       *  특징 공학 및 전처리 파이프라인 개선하기
+       *  하이퍼파라미터 조정하기
+   *  케라스로 모델 개선하기
+       *  케라스의 전처리 계층
+       *  모델을 위한 데이터셋과 전처리 계층 만들기
+       *  신경망 모델 구축
+       *  케라스에서 하이퍼파라미터 튜닝하기
+   *  빅쿼리 ML에서의 하이퍼파라미터 튜닝하기
+       *  자동차 경매 데이터 불러오고 변환하기
+       *  선형 회귀 모델 학습시키기 및 TRANSFORM 절 사용하기
+       *  빅쿼리 ML에서 하이퍼파라미터 튜닝 작업 구성하기
+   *  대규모 모델의 하이퍼파라미터 튜닝
+       *  Vertex AI의 학습 및 튜닝
+       *  아마존 세이지메이커를 사용한 자동 모델 튜닝
+       *  애져 머신러닝
+   *  요약
 
-9. Next Steps in Your AI Journey
-   *  Going Deeper into Data Science
-       *  Working with Unstructured Data
-       *  Generative AI
-       *  Explainable AI
-   *  ML Operations
-   *  Continuous Training and Evaluation
-   *  Summary
+9. AI 여정의 다음 단계
+   *  데이터 과학에 대해 더 깊이 알아보기
+       *  비정형 데이터로 작업하기
+       *  생성형 AI
+       *  설명 가능한 AI
+   *  ML 운영
+   *  지속적인 학습 및 평가
+   *  요약
